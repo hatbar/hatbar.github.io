@@ -1,0 +1,93 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+/* https://github.com/BafS/mu */
+*,:after,:before{box-sizing:border-box}body{margin:0 0 70px 0;color:#111;background:#fffff8;font:18px/1.6 Georgia,"Times New Roman",Times,serif}h1,h2,h3,h4,h5{font-family: "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.2; margin:0; padding:0;}a{color:#07c;text-decoration:none}a:hover{color:#059;text-decoration:underline}hr{border:0;margin:25px 0}table{border-spacing:0;border-collapse:collapse;text-align:left;padding-bottom:25px}td,th,hr{border-bottom:1px solid #ddd}input,table{font-size:16px}input,td,th{padding:5px;vertical-align:bottom}button:hover{background:#eee}.row{display:block;width:auto;min-height:1px}.row:after{content:"";display:table;clear:both}.row .c{float:left}table,.g2,.g3,.g3-2,.m2,.m3,.m3-2{width:100%}@media (min-width: 768px){.g2{width:50%}.m2{margin-left:50%}.g3{width:33.33%}.g3-2{width:66.66%}.m3{margin-left:33.33%}.m3-2{margin-left:66.66%}}
+
+img {
+    max-width: 100%;
+    border: 1px solid #dadada;
+}
+
+.hero {
+    background: rgba(0,0,0,0);
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.0)
+    ), url('../img/hero.png') center center;
+    height: 100vh;
+    max-height: 100vh;
+    background-size: 100%;
+    background-size: 100vw;
+    background-size: cover;
+}
+
+.hero-inner {
+    text-align:center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hero-inner h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: 80px;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.hero-inner hr {
+    width:33.33%;
+    margin-left:33.33%;
+    margin-top: 5px;
+}
+
+.hero-inner h3 {
+    color: white;
+    margin-top: 10px;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.section {
+    margin-top: 70px;
+}
+
+.text {
+    padding-left: 70px;
+}
+
+.container {
+    margin: 0 70px 0 70px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin: 0 40px 0 40px;
+    }
+    .text {
+        padding-left: 0;
+    }
+    .hero-inner h1 {
+        font-size: 50px;
+    }
+    .hero-inner h3 {
+        font-size: 20px;
+    }
+
+}
+
+.visible-phone {
+   display: none;
+}
+
+@media (max-width: 550px) {
+    .hidden-phone {
+       display: none;
+    }
+    .visible-phone {
+       display: inline;
+    }
+}
